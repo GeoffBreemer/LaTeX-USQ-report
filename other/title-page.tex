@@ -1,0 +1,44 @@
+\hypersetup{pageanchor=false}					% silence hyperref warning
+\makeatletter 								% allows access to \@title and \@author
+\begin{titlepage}
+	\begin{center}
+	\vspace*{1cm}
+	\huge
+	\textbf{\usqcoursecode{} \usqcoursedescription{}}
+	
+	\vspace{1.5cm}
+	\Large
+	\textbf{\@title}
+	
+	\vspace{6.0cm}
+	\large
+	\usqsubtitle{}
+	
+	\normalsize
+	\vfill
+	\flushleft{
+	Author:
+	
+	\textbf{\@author}
+	
+	Student number: \usqstudentnumber{}
+	
+	Email: \usqstudentemail{}
+	
+	Date: \@date
+	
+	Semester \usqacademicsemester{}, \usqacademicyear{}}
+	\vspace{0.5cm}
+	\normalsize
+
+	Prepared for:
+	
+	\textbf{\usqpreparedfor{}}
+	
+	\usqpreparedforposition{}
+	
+	\usqpreparedfororganisation{}
+	\end{center}
+\end{titlepage}
+\hypersetup{pageanchor=true}							% silence hyperref warning
+\makeatother

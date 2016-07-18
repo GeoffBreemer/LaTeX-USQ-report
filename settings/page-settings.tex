@@ -1,0 +1,16 @@
+\usepackage{fancyhdr}
+\makeatletter 								% allows access to \@title and \@author
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\rightmark}
+\fancyhead[R]{\@title}
+\fancyfoot[C]{\thepage}
+
+% Change the TOC header from Contents to Table of Contents
+\addto\captionsamerican{							
+  \renewcommand{\contentsname}
+   {Table of Contents}
+}
+
+\makeatother

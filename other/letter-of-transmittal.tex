@@ -1,0 +1,45 @@
+\thispagestyle{empty}						% remove header and footer
+\makeatletter 								% allows access to \@title and \@author
+\begin{adjustwidth}{200pt}{}
+\noindent
+\@author
+
+\noindent
+Student number: \usqstudentnumber{}
+
+\noindent
+Email: \usqstudentemail{}
+
+\vspace{0.5cm}
+\end{adjustwidth}
+
+{\setlength{\parskip}{1.3ex plus 0.5ex minus 0.3ex}
+\begin{flushleft}
+\textbf{\@date}
+
+\vspace{0.8cm}
+John Doe\newline
+Company Pty Ltd\newline
+Address Line 1\newline
+Suburb State Postcode
+
+\vspace{0.8cm}
+Dear Mr Doe
+\end{flushleft}
+
+Please find attached lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mi justo, pulvinar ac tempus a, tempor at magna.
+
+Phasellus in ligula fermentum, fermentum risus vel, convallis lacus. Quisque egestas ex nec suscipit accumsan. Nullam sit amet sapien mi. Cras lacinia, purus sit amet luctus suscipit, neque nisi venenatis magna, at imperdiet dui mauris id erat. Suspendisse massa velit, porttitor sit amet justo finibus, consequat ultrices dolor.
+
+Mauris ac dictum magna. Sed sodales rhoncus nisi. Suspendisse potenti. Nunc condimentum sapien ac elit mollis tempor. Aliquam vel lorem in urna sagittis commodo ut non nisi. Ut auctor iaculis justo molestie fringilla. Quisque lorem risus, hendrerit eget leo id, rhoncus semper risus.
+
+It has been my pleasure to prepare this report, and I am happy to answer any questions that may arise from it.
+
+\noindent
+Your sincerely,
+
+\vspace{2cm}
+\noindent
+\@author
+}
+\makeatother
