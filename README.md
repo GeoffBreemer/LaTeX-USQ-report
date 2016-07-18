@@ -4,7 +4,7 @@ LaTeX template for USQ reports.
 # Using biber instead of BibTex as the backend
 The line below instructs TeXShop to use biber as the back-end, it MUST appear in the first 20 lines of code in the document to a) work and b) avoid weird errors. The % is required, it does NOT mean the line is commented out.
 
-`% !BIB TS-program = biber
+`% !BIB TS-program = biber`
 
 # To generate the .PDF
 - optional: update references/bibliography-references.bib
