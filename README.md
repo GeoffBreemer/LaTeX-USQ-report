@@ -1,5 +1,5 @@
 # LaTeX-USQ-report
-LaTeX template for USQ reports.
+LaTeX template for USQ reports. Uses BiBLaTeX for referencing.
 
 # Using biber instead of BibTex as the backend
 The line below instructs TeXShop to use biber as the back-end, it MUST appear in the first 20 lines of code in the document to a) work and b) avoid weird errors. The `%` is required, it does NOT mean the line is commented out.
