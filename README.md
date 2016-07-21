@@ -6,10 +6,28 @@ The line below instructs TeXShop to use biber as the back-end, it MUST appear in
 
 `% !BIB TS-program = biber`
 
-# To generate the .PDF
-- optional: update references/bibliography-references.bib
-- Run LaTeX
-- run BibTeX/biber
+# Start here: initial setup
+- rename `USQ Report template.tex` to something more useful
+- update `personal-settings.tex`
+
+# While writing the report
+- create/edit chapter and appendix .tex files and store them in the `content` and `appendices` subfolder respectively
+- store images in the `images` subfolder
+- update `references/bibliography-references.bib`
+- add/delete chapters, appendices and other report parts to/from `USQ Report template.tex`
+
+# Typically done during the final stages
+- update `content/conclusion.tex` (optional)
+- update `content/introduction.tex` (optional)
+- update `content/recommendations.tex` (optional)
+- update `other/abstract.tex` (optional)
+- update `other/acknowledgments` (optional)
+- update `other/glossary-abbreviations` (optional)
+- update `other/letter-of-transmittal.text` (optional)
+
+# To generate the .PDF using TeXShop
+- run LaTeX
+- run BibTex (which will actually run BibLaTeX using biber as the backend)
 - run LaTeX
 - run LaTeX again
 
