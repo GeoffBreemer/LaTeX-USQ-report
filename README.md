@@ -13,7 +13,7 @@ The line below instructs TeXShop to use biber as the back-end, it MUST appear in
 # While writing the report
 - create/edit chapter and appendix .tex files and store them in the `content` and `appendices` subfolder respectively
 - store images in the `images` subfolder
-- update `references/bibliography-references.bib`
+- add/delete reference to/from `references/bibliography-references.bib`
 - add/delete chapters, appendices and other report parts to/from `USQ Report template.tex`
 
 # Typically done during the final stages
