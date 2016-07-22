@@ -1,6 +1,17 @@
+% APA and Harvard referencing style
 \usepackage[american]{babel}
 \usepackage[style=apa, sorting=nyt, citestyle=authoryear]{biblatex}
-\usepackage{csquotes}
 \DeclareLanguageMapping{english}{american-apa}
+
+% Harvard referencing style only
+\newbibmacro*{labelyear+extrayear}{%
+  \iffieldundef{labelyear}
+    {\iffieldundef{origyear}
+      {}
+      {\setunit{\addcomma\space}\printfield[noformat]{origyear}}}%
+    {\setunit{\addcomma\space}\printdateextralabel}}
+
+% Common
+\usepackage{csquotes}
 \setlength\bibitemsep{\baselineskip}					% increase spacing between reference items
-\bibliography{references/bibliography-references}		% add/delete/edit references stored in this file: references/bibliography-references.bib
+\addbibresource{references/bibliography-references.bib}	% add/delete/edit references stored in this file
