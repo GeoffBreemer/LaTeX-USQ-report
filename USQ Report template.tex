@@ -20,6 +20,8 @@
 \usepackage{rotating}						% rotate large tables
 \usepackage[titletoc]{appendix}					% show "Appendix" in the TOC
 \usepackage{amssymb}						% symbols
+\usepackage{amsmath}
+\usepackage{multirow}					         % To combine table rows
 
 % Document settings
 \input{settings/bibliography-references-settings}	% bibliography/references specific settings
@@ -35,16 +37,18 @@
 % Start of the document
 \begin{document}
 
+\pagenumbering{roman}
+
 % Introductory content (Roman page numbers)
 \input{other/letter-of-transmittal}
 \input{other/title-page}
-\pagenumbering{roman}
 \input{other/toc-figures-tables}
 \input{other/glossary-abbreviations}
 \input{other/acknowledgments}
 
 % Main content (Arabic page numbers)
 \input{other/abstract}
+\clearpage
 \pagenumbering{arabic}
 \input{content/introduction}
 \input{content/chapteronabc-rename-me}
@@ -55,6 +59,7 @@
 \input{references/bibliography-references}
 
 % Appendices (Arabic page numbers)
+\clearpage
 \begin{appendices}
 \input{appendices/appendixone}
 \input{appendices/appendixtwo}
