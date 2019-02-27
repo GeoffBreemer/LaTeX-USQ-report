@@ -9,7 +9,7 @@ The line below instructs TeXShop to use biber as the back-end, it MUST appear in
 # Start here: initial setup
 - rename `USQ Report template.tex` to something more useful
 - update `personal-settings.tex`
-- update `other/toc-figures-tables.tex' to include/exclude the table of figures, tables etc.
+- update `other/toc-figures-tables.tex` to include/exclude the table of figures, tables etc.
 
 # While writing the report
 - create/edit chapter and appendix .tex files and store them in the `content` and `appendices` subfolder respectively
